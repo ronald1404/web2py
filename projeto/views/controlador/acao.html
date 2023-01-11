@@ -1,0 +1,26 @@
+{{extend 'layout.html'}}
+<html>
+    <head>
+    </head>
+    <body>
+        {{print ('_'*80)}}
+        {{print ("visão no navegador")}}
+        {{=lista1}}
+        <br>
+        {{=lista2}}
+        
+        <table>
+            <ul>
+                {{for mes in meses:}}
+                <li>{{=mes}}</li>
+                {{pass
+                pass}}
+            </ul>
+        </table>
+        {{print (request.vars,request.args)}}
+        {{=request.args[0]}}
+        <br>
+        {{=request.vars['var1']}}
+        
+    </body>
+</html>

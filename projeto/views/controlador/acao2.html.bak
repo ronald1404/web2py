@@ -1,0 +1,2 @@
+{{extend 'layout.html'}}
+<h1>This is the controlador/acao2.html template</h1>
